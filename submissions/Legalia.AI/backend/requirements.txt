@@ -1,0 +1,8 @@
+agno
+groq
+duckduckgo-search
+openai
+google-genai
+streamlit
+python-dotenv
+langchain
