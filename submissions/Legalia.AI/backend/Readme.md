@@ -2,7 +2,7 @@
 <h3 align='center'> An AI-powered court case simulation with multiple roles and perspectives.</h3>
 
 <p align="center">
-<img src="[https://github.com/user-attachments/assets/edd4c308-787e-4dae-a582-841c693bcb4b](https://github.com/Sahil0015/global-agent-hackathon-may-2025/blob/main/submissions/Legalia.AI/legalia.ai_flowchart.png)"/, height=700, width=650>
+  <img src="https://github.com/Sahil0015/global-agent-hackathon-may-2025/blob/main/submissions/Legalia.AI/legalia.ai_flowchart.png?raw=true" alt="Legalia Flowchart" width="650" height="700">
 </p>
 
 ## Project Title
