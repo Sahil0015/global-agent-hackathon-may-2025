@@ -6,8 +6,8 @@
 </p>
 
 ## Project Title
-Legalia.AI (AI Courtroom: Multi-Agent Justice Simulator)
-Pronunciation: lee-GAE-lee-uh dot A-I
+- Legalia.AI (AI Courtroom: Multi-Agent Justice Simulator)
+- Pronunciation: lee-GAE-lee-uh dot A-I
 
 ## Project Overview
 Our project presents a dynamic, interactive courtroom simulation powered entirely by multi-agent AI. Each character in the courtroom—judge, lawyers, victim, accused, witnesses, media, government officials, lab experts, and the public—is represented by a purpose-built AI agent with distinct roles, objectives, and reasoning capabilities.
