@@ -1907,13 +1907,10 @@ def court_case_pipeline(case_title: str, case_description: str, evidence1: str, 
 ###############################################################################
 
 #Validate API keys function
-def validate_api_keys(openai_key: str, groq_key: str) -> tuple[bool, str]:
-    """Validate that API keys are provided and have basic format"""
+def validate_api_keys(openai_key: str) -> tuple[bool, str]:
+    """Validate that API key is provided and has basic format"""
     if not openai_key or not openai_key.strip():
         return False, "OpenAI API Key is required"
-    
-    if not groq_key or not groq_key.strip():
-        return False, "Groq API Key is required"
     
     # Basic format validation
     if not openai_key.startswith('sk-'):
@@ -1922,10 +1919,7 @@ def validate_api_keys(openai_key: str, groq_key: str) -> tuple[bool, str]:
     if len(openai_key) < 20:
         return False, "OpenAI API Key appears to be too short"
     
-    if len(groq_key) < 20:
-        return False, "Groq API Key appears to be too short"
-    
-    return True, "API Keys validated successfully"
+    return True, "API Key validated successfully"
 
 # Streamlit app creation function
 def create_streamlit_app():
@@ -1940,42 +1934,30 @@ def create_streamlit_app():
 
     # API Keys Section - Show first
     st.header("🔑 API Configuration")
-    st.markdown("Please provide your API keys to proceed with the simulation.")
+    st.markdown("Please provide your OpenAI API key to proceed with the simulation.")
     
-    col1, col2 = st.columns(2)
+    openai_api_key = st.text_input(
+        "OpenAI API Key", 
+        type="password",
+        help="Enter your OpenAI API key (starts with sk-)",
+        placeholder="sk-..."
+    )
     
-    with col1:
-        openai_api_key = st.text_input(
-            "OpenAI API Key", 
-            type="password",
-            help="Enter your OpenAI API key (starts with sk-)",
-            placeholder="sk-..."
-        )
+    # Validate API key
+    api_key_valid, validation_message = validate_api_keys(openai_api_key)
     
-    with col2:
-        groq_api_key = st.text_input(
-            "Groq API Key", 
-            type="password",
-            help="Enter your Groq API key",
-            placeholder="Enter your Groq API key"
-        )
-    
-    # Validate API keys
-    api_keys_valid, validation_message = validate_api_keys(openai_api_key, groq_api_key)
-    
-    if not api_keys_valid:
+    if not api_key_valid:
         st.error(validation_message)
-        st.info("👆 Please provide valid API keys to continue.")
+        st.info("👆 Please provide valid API key to continue.")
         st.stop()
     else:
-        st.success("✅ API Keys validated successfully!")
+        st.success("✅ API Key validated successfully!")
         # Set environment variables for the session
         os.environ["OPENAI_API_KEY"] = openai_api_key
-        os.environ["GROQ_API_KEY"] = groq_api_key
     
     st.divider()
 
-    # Sidebar for case details - Only show after API keys are validated
+    # Sidebar for case details - Only show after API key is validated
     with st.sidebar:
         st.header("Case Details")
         case_title = st.text_input("Case Title", help="Enter a descriptive title for the case")

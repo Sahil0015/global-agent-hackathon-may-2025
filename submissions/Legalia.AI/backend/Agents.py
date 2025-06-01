@@ -8,7 +8,7 @@ judge_agent = Agent(
     name="Judge Agent",
     role="Preside over court proceedings and make legal decisions under 200 words",
     model=OpenAIChat(id="gpt-4o-mini"),
-    tools=[ReasoningTools(analyze=False)],
+    tools=[ReasoningTools(), DuckDuckGoTools()],
     instructions=[
         "You are an experienced, impartial judge presiding over court proceedings",
         "Analyze legal arguments and evidence presented with careful consideration",
@@ -28,7 +28,7 @@ prosecutor_agent = Agent(
     name="Prosecutor Agent", 
     role="Present the case against the defendant under 100 words",
     model=OpenAIChat(id="gpt-4o-mini"),
-    tools=[ReasoningTools(analyze=False)],
+    tools=[ReasoningTools(), DuckDuckGoTools()],
     instructions=[
         "You are a skilled prosecutor representing the state/plaintiff's interests",
         "Build a compelling and factual case against the defendant",
@@ -67,7 +67,7 @@ defense_agent = Agent(
     name="Defense Agent",
     role="Represent and defend the accused under 100 words",
     model=OpenAIChat(id="gpt-4o-mini"),
-    tools=[ReasoningTools(analyze=False)],
+    tools=[ReasoningTools(), DuckDuckGoTools()],
     instructions=[
         "You are a skilled defense attorney protecting your client's rights",
         "Challenge prosecution evidence through careful cross-examination",
@@ -126,7 +126,7 @@ expert_agent = Agent(
     name="Expert Agent",
     role="Provide specialized technical analysis under 100 words",
     model=OpenAIChat(id="gpt-4o-mini"),
-    tools=[ReasoningTools(analyze=False)],
+    tools=[ReasoningTools(), DuckDuckGoTools()],
     instructions=[
         "You are an expert witness with specialized knowledge in relevant fields",
         "Analyze technical, forensic, or specialized evidence professionally",
