@@ -23,7 +23,8 @@ Experience the future of legal education with our revolutionary Interactive Cour
 - If scaled correctly, it can use to get AI understanding on different pending and complete cases.
 
 ### Demo Video
-[Link]()
+Working demo of the website - [Link](https://www.youtube.com/watch?v=6Jd6F6EwKFs)
+Go-through with the flowchart and other necessary details - [Link](https://www.youtube.com/watch?v=-QfZF2I7PaA)
 
 ### Website Link
 Deployed on streamlit cloud - [Link](https://legalia-ai.streamlit.app/) 
