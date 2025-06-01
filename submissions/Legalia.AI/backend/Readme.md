@@ -21,7 +21,7 @@ Experience the future of legal education with our revolutionary Interactive Cour
 ### Demo Video
 [Link]()
 
-### Webite 
+### Website Link
 Deployed on streamlit cloud - [Link](https://legalia-ai.streamlit.app/) 
 
 ## System Architecture
