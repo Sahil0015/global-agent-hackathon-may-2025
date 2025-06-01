@@ -22,9 +22,9 @@ Experience the future of legal education with our revolutionary Interactive Cour
 - Can demonstrate real power of LLM Models and if they are capable of solving real-case on their own.
 - If scaled correctly, it can use to get AI understanding on different pending and complete cases.
 
-### Demo Video
-Working demo of the website - [Link](https://www.youtube.com/watch?v=6Jd6F6EwKFs)
-Go-through with the flowchart and other necessary details - [Link](https://www.youtube.com/watch?v=-QfZF2I7PaA)
+### 🎥 Demo Video
+- 🔗 [Working demo of the website](https://www.youtube.com/watch?v=6Jd6F6EwKFs)  
+- 🔗 [Flowchart walkthrough and details](https://www.youtube.com/watch?v=-QfZF2I7PaA)
 
 ### Website Link
 Deployed on streamlit cloud - [Link](https://legalia-ai.streamlit.app/) 
