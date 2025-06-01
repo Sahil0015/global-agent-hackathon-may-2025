@@ -12,6 +12,12 @@ Users can observe the court proceedings as they unfold autonomously, offering a 
 
 Experience the future of legal education with our revolutionary Interactive Courtroom Simulation Platform—a cutting-edge ecosystem where artificial intelligence brings the intricacies of judicial proceedings to life.
 
+## Project Objective
+- It can be used as a simulator where user can sit back and enjoy reading the court case hearning.
+- Used as a educational tool for law students.
+- Can demonstrate real power of LLM Models and if they are capable of solving real-case on their own.
+- If scaled correctly, it can use to get AI understanding on different pending and complete cases.
+
 ### Demo Video
 [Link]()
 
