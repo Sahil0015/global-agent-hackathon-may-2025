@@ -1,9 +1,13 @@
 <h1 align='center'>⚖️ Legalia.AI </h1>
 <h3 align='center'> An AI-powered court case simulation with multiple roles and perspectives.</h3>
 
+<p align="center">
+  <img src="https://github.com/Sahil0015/global-agent-hackathon-may-2025/blob/main/submissions/Legalia.AI/legalia.ai_flowchart.png?raw=true" alt="Legalia Flowchart" width="650" height="700">
+</p>
+
 ## Project Title
-Legalia.AI (AI Courtroom: Multi-Agent Justice Simulator)
-Pronunciation: lee-GAE-lee-uh dot A-I
+- Legalia.AI (AI Courtroom: Multi-Agent Justice Simulator)
+- Pronunciation: lee-GAE-lee-uh dot A-I
 
 ## Project Overview
 Our project presents a dynamic, interactive courtroom simulation powered entirely by multi-agent AI. Each character in the courtroom—judge, lawyers, victim, accused, witnesses, media, government officials, lab experts, and the public—is represented by a purpose-built AI agent with distinct roles, objectives, and reasoning capabilities.
@@ -18,8 +22,9 @@ Experience the future of legal education with our revolutionary Interactive Cour
 - Can demonstrate real power of LLM Models and if they are capable of solving real-case on their own.
 - If scaled correctly, it can use to get AI understanding on different pending and complete cases.
 
-### Demo Video
-[Link]()
+### 🎥 Demo Video
+- 🔗 [Working demo of the website](https://www.youtube.com/watch?v=6Jd6F6EwKFs)  
+- 🔗 [Flowchart walkthrough and details](https://www.youtube.com/watch?v=-QfZF2I7PaA)
 
 ### Website Link
 Deployed on streamlit cloud - [Link](https://legalia-ai.streamlit.app/) 
