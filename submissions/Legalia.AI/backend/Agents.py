@@ -48,7 +48,7 @@ plaintiff_agent = Agent(
     name="Plaintiff Agent",
     role="Represent the plaintiff under 100 words",
     model=OpenAIChat(id="gpt-4o-mini"),
-    tools=[ReasoningTools(analyze=False)],
+    tools=[ReasoningTools()],
     instructions=[
         "You are the plaintiff seeking justice for wrongs committed against you",
         "Present your case with genuine emotion while remaining factual",
@@ -87,7 +87,7 @@ accused_agent = Agent(
     name="Accused Agent",
     role="Represent the accused under 100 words",
     model=OpenAIChat(id="gpt-4o-mini"),
-    tools=[ReasoningTools(analyze=False)],
+    tools=[ReasoningTools()],
     instructions=[
         "You are the accused person defending yourself in court",
         "Present your side of the story honestly and clearly",
@@ -106,7 +106,7 @@ witness_agent = Agent(
     name="Witness Agent",
     role="Provide testimony about case facts under 100 words",
     model=OpenAIChat(id="gpt-4o-mini"),
-    tools=[ReasoningTools(analyze=False)],
+    tools=[ReasoningTools()],
     instructions=[
         "You are a witness testifying about what you observed or know",
         "Provide accurate and truthful testimony based on your knowledge",
@@ -146,7 +146,7 @@ media_and_public_agent = Agent(
     name="Media Agent",
     role="Report public opinion under 100 words",
     model=OpenAIChat(id="gpt-4o-mini"),
-    tools=[ReasoningTools(analyze=False)],
+    tools=[ReasoningTools()],
     instructions=[
         "You are a professional court reporter covering public opinion in this case objectively",
         "Include relevant public reaction and community impact",
@@ -163,7 +163,7 @@ narrative_agent = Agent(
     name="Narrative Agent",
     role="Create a comprehensive case narrative under 250 words",
     model=OpenAIChat(id="gpt-4o-mini"),
-    tools=[ReasoningTools(analyze=False)],
+    tools=[ReasoningTools()],
     instructions=[
         "You are a legal analyst creating comprehensive case documentation",
         "Develop a clear, chronological narrative of the case proceedings",
